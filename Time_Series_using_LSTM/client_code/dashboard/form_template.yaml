@@ -1,0 +1,297 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: ColumnPanel
+  properties: {role: card, col_widths: '{}'}
+  name: card_1
+  layout_properties: {grid_position: 'CZPWKF,FCVERX'}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: 'theme:Gray 800'}
+    name: card_2
+    layout_properties: {grid_position: 'RZFUYB,MISIKQ'}
+    components:
+    - type: RichText
+      properties: {role: null, align: center, tooltip: '', enable_slots: true, border: '',
+        foreground: 'theme:White', visible: true, font_size: 30, content: Indonesia Covid-19 Movement,
+        font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+        format: markdown}
+      name: rich_text_1
+      layout_properties: {grid_position: 'PIVSIA,WTLHMH'}
+      components:
+      - type: Label
+        properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
+          visible: true, text: '', font_size: 20, font: '', spacing_above: small,
+          icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+          underline: false, icon: 'fa:calendar-check-o'}
+        name: tanggal_lbl
+        layout_properties:
+          col_widths: {}
+          grid_position: VKXNKJ,EKAZFS
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_3
+    layout_properties: {grid_position: 'TQRQSZ,WFJQXX'}
+    components:
+    - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: ''}
+      name: card_3_copy
+      layout_properties:
+        col_widths: {}
+        grid_position: RVEAYE,FSEQZH
+        full_width_row: true
+      components:
+      - type: ColumnPanel
+        properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+          wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+          spacing_below: small, background: 'theme:Primary 700'}
+        name: card_5_copy
+        layout_properties: {grid_position: 'FYASQY,SITUXA YMNBIX,LMHONH', full_width_row: false}
+        components:
+        - type: RichText
+          properties: {role: null, align: center, tooltip: '', enable_slots: true,
+            border: '', foreground: 'theme:White', visible: true, font_size: 25, content: Confirm Case,
+            font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+            format: plain_text}
+          name: rich_text_2_copy
+          layout_properties: {grid_position: 'OVYKGP,NVBSOW', full_width_row: true}
+          components:
+          - type: Label
+            properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
+              visible: true, text: '', font_size: 30, font: '', spacing_above: small,
+              icon_align: left, spacing_below: none, italic: false, background: '',
+              bold: true, underline: false, icon: 'fa:heartbeat'}
+            name: confirmcase_lbl
+            layout_properties: {}
+          - type: Label
+            properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+              visible: true, text: '', font_size: 20, font: '', spacing_above: none,
+              icon_align: left, spacing_below: none, italic: false, background: '',
+              bold: false, underline: false, icon: 'fa:plus'}
+            name: conf_selisih_lbl
+            layout_properties: {}
+      - type: ColumnPanel
+        properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+          wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+          spacing_below: small, background: '#eea62b'}
+        name: card_4_copy
+        layout_properties: {grid_position: 'FYASQY,SITUXA YMNBIX,BVPHJL', full_width_row: false}
+        components:
+        - type: RichText
+          properties: {role: null, align: center, tooltip: '', enable_slots: true,
+            border: '', foreground: 'theme:White', visible: true, font_size: 25, content: Active Case,
+            font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+            format: plain_text}
+          name: rich_text_6
+          layout_properties: {grid_position: 'PXKJJJ,AZTWSJ', full_width_row: true}
+          components:
+          - type: Label
+            properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
+              visible: true, text: '', font_size: 30, font: '', spacing_above: small,
+              icon_align: left, spacing_below: none, italic: false, background: '',
+              bold: true, underline: false, icon: 'fa:plus-square'}
+            name: activecase_lbl
+            layout_properties: {grid_position: 'FYASQY,PFUDKD', full_width_row: true}
+          - type: Label
+            properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+              visible: true, text: '', font_size: 20, font: '', spacing_above: none,
+              icon_align: left, spacing_below: none, italic: false, background: '',
+              bold: false, underline: false, icon: 'fa:plus'}
+            name: activecase_selisih_lbl
+            layout_properties: {}
+          data_bindings: []
+      - type: ColumnPanel
+        properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+          wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+          spacing_below: small, background: '#36cea1'}
+        name: card_6
+        layout_properties: {grid_position: 'FYASQY,BKWTOP AGCACS,FVOPXZ', full_width_row: false}
+        components:
+        - type: RichText
+          properties: {role: null, align: center, tooltip: '', enable_slots: true,
+            border: '', foreground: 'theme:White', visible: true, font_size: 25, content: Recovered,
+            font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+            format: plain_text}
+          name: rich_text_3_copy
+          layout_properties: {grid_position: 'TSPPGM,OHTBKX', full_width_row: true}
+          components:
+          - type: Label
+            properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
+              visible: true, text: '', font_size: 30, font: '', spacing_above: small,
+              icon_align: left, spacing_below: none, italic: false, background: '',
+              bold: true, underline: false, icon: 'fa:adjust'}
+            name: recovercase_lbl
+            layout_properties: {grid_position: 'FYASQY,BKWTOP JPLYEG,GIJHNN', full_width_row: true}
+          - type: Label
+            properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+              visible: true, text: '', font_size: 20, font: '', spacing_above: none,
+              icon_align: left, spacing_below: none, italic: false, background: '',
+              bold: false, underline: false, icon: 'fa:plus'}
+            name: recover_selisih_lbl
+            layout_properties: {}
+      - type: ColumnPanel
+        properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+          wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+          spacing_below: small, background: 'theme:Secondary 700'}
+        name: card_7
+        layout_properties: {grid_position: 'FYASQY,BKWTOP AGCACS,CSBMAB', full_width_row: false}
+        components:
+        - type: RichText
+          properties: {role: null, align: center, tooltip: '', enable_slots: true,
+            border: '', foreground: 'theme:White', visible: true, font_size: 25, content: Death,
+            font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+            format: plain_text}
+          name: rich_text_4
+          layout_properties: {grid_position: 'KAEOVO,IDAQLK', full_width_row: true}
+          components:
+          - type: Label
+            properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
+              visible: true, text: '', font_size: 30, font: '', spacing_above: small,
+              icon_align: left, spacing_below: none, italic: false, background: '',
+              bold: true, underline: false, icon: 'data:image/png;base64,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'}
+            name: deathcase_lbl
+            layout_properties: {grid_position: 'FYASQY,BKWTOP JPLYEG,TPPPEH'}
+            event_bindings: {show: deathcase_lbl_show}
+          - type: Label
+            properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+              visible: true, text: '', font_size: 20, font: '', spacing_above: none,
+              icon_align: left, spacing_below: none, italic: false, background: '',
+              bold: false, underline: false, icon: 'fa:plus'}
+            name: death_selisih_lbl
+            layout_properties: {}
+    - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: 'theme:Primary 700'}
+      name: card_4
+      layout_properties: {grid_position: 'VYCEMZ,EUXJKU'}
+      components:
+      - type: RichText
+        properties: {role: null, align: center, tooltip: '', enable_slots: true, border: '',
+          foreground: 'theme:White', visible: true, font_size: 25, content: Highest Confirm Case a day,
+          font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+          format: markdown}
+        name: rich_text_2
+        layout_properties: {grid_position: 'ZTGOTD,OIBMGK'}
+        components:
+        - type: Label
+          properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:White',
+            visible: true, text: '64,718', font_size: 30, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: true, underline: false, icon: 'fa:heartbeat'}
+          name: highest_pos_lbl
+          layout_properties: {}
+        - type: Label
+          properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+            visible: true, text: '2022-02-16', font_size: 15, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: 'fa:calendar'}
+          name: label_3
+          layout_properties: {}
+    - type: ColumnPanel
+      properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+        wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+        spacing_below: small, background: 'theme:Secondary 700'}
+      name: card_5
+      layout_properties: {grid_position: 'VYCEMZ,ESQWMP'}
+      components:
+      - type: RichText
+        properties: {role: null, align: center, tooltip: '', enable_slots: true, border: '',
+          foreground: 'theme:White', visible: true, font_size: 25, content: Highest Death Case a day,
+          font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+          format: markdown}
+        name: rich_text_3
+        layout_properties: {grid_position: 'GNUTVB,JDJEGB'}
+        components:
+        - type: Label
+          properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+            visible: true, text: '2,069', font_size: 30, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: true, underline: false, icon: 'data:image/png;base64,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'}
+          name: label_2
+          layout_properties: {}
+        - type: Label
+          properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+            visible: true, text: '2021-07-21', font_size: 15, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: 'fa:calendar'}
+          name: label_4
+          layout_properties: {}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+        50', visible: true, text: '    Daily Case Graph', font_size: 25, font: '',
+      spacing_above: small, icon_align: right, spacing_below: small, italic: false,
+      background: 'theme:Primary 700', bold: false, underline: false, icon: 'fa:area-chart'}
+    name: label_15
+    layout_properties:
+      col_widths: {}
+      grid_position: JTUEXD,MWFUQR
+  - type: Plot
+    properties: {height: 594}
+    name: plot_4
+    layout_properties: {grid_position: 'WWGIXR,HERPVB'}
+    event_bindings: {click: plot_4_click}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+        50', visible: true, text: '    Confirm Case Graph', font_size: 25, font: '',
+      spacing_above: small, icon_align: right, spacing_below: small, italic: false,
+      background: 'theme:Primary 700', bold: false, underline: false, icon: 'fa:area-chart'}
+    name: label_10
+    layout_properties:
+      col_widths: {}
+      grid_position: RJSYQX,XYDMZG
+  - type: Plot
+    properties: {}
+    name: plot_1
+    layout_properties: {grid_position: 'RPQMKF,QHSVOQ', full_width_row: true}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+        50', visible: true, text: '    Recoverd Case Graph', font_size: 25, font: '',
+      spacing_above: small, icon_align: right, spacing_below: small, italic: false,
+      background: 'theme:Primary 700', bold: false, underline: false, icon: 'fa:area-chart'}
+    name: label_13
+    layout_properties:
+      col_widths: {}
+      grid_position: MOCUKE,UZLLKE
+  - type: Plot
+    properties: {}
+    name: plot_2
+    layout_properties:
+      col_widths: {}
+      grid_position: XRLPCS,GOCCQB
+    event_bindings: {click: plot_2_click}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Gray
+        50', visible: true, text: '    Death Case Graph', font_size: 25, font: '',
+      spacing_above: small, icon_align: right, spacing_below: small, italic: false,
+      background: 'theme:Primary 700', bold: false, underline: false, icon: 'fa:area-chart'}
+    name: label_14
+    layout_properties:
+      col_widths: {}
+      grid_position: WYIDQR,UVAXHF
+  - type: Plot
+    properties: {}
+    name: plot_3
+    layout_properties:
+      col_widths: {}
+      grid_position: IDLAMX,IVJIRE
+    event_bindings: {click: plot_3_click}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:White',
+      visible: false, text: '    Data by WHO ', font_size: 25, font: '', spacing_above: small,
+      icon_align: right, spacing_below: small, italic: false, background: 'theme:Primary
+        700', bold: false, underline: false, icon: 'fa:ambulance'}
+    name: label_1
+    layout_properties: {grid_position: 'JJMZUV,NMDWVK'}
+  - type: Plot
+    properties: {spacing_above: small, spacing_below: small, height: 450, visible: false,
+      tooltip: '', interactive: true}
+    name: plot_5
+    layout_properties: {grid_position: 'RYVYBH,QGICNP'}
+is_package: true
+custom_component: false

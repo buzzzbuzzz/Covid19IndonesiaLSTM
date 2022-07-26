@@ -1,0 +1,58 @@
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: Form3}
+package_name: Time_Series_using_LSTM
+allow_embedding: false
+name: LSTM Model Bryan
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+metadata: {logo_img: 'https://https://img.freepik.com/free-vector/coronavirus-logo-template-concept_23-2148500585.jpg',
+  description: This app is used to predict the number of cases in covid using Long Short Term Memory}
+startup_form: Form1
+native_deps: {head_html: ''}
+db_schema:
+  table_use:
+    title: table_use
+    client: full
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: media_obj
+      admin_ui: {width: 200}
+      type: media
+  covid_dash:
+    title: covid_dash
+    client: none
+    server: search
+    columns:
+    - name: tanggal
+      admin_ui: {width: 200}
+      type: date
+    - name: confirm
+      admin_ui: {width: 200}
+      type: number
+    - name: active
+      admin_ui: {width: 200}
+      type: number
+    - name: recovered
+      admin_ui: {width: 200}
+      type: number
+    - name: Death
+      admin_ui: {width: 200}
+      type: number
+  data:
+    title: data
+    client: none
+    server: full
+    columns:
+    - name: file
+      admin_ui: {width: 200}
+      type: media
+    - name: file_name
+      admin_ui: {width: 200}
+      type: string
+renamed: true

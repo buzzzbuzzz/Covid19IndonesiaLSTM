@@ -1,0 +1,299 @@
+properties: []
+is_package: false
+events: []
+custom_component: false
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{"JOURFM":25,"RHPKPT":35}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"MJSDIQ":15,"IYMMKJ":20,"KIERQV":25}',
+      spacing_below: small, background: ''}
+    name: card_5
+    layout_properties: {grid_position: 'JSMGJB,JOURFM MTNDPP,LXDPIX', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: Upload File, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1_copy
+      layout_properties:
+        col_widths: {}
+        grid_position: ERTKJE,MJSDIQ
+        full_width_row: false
+    - type: FileLoader
+      properties:
+        role: null
+        show_state: true
+        align: center
+        tooltip: ''
+        border: ''
+        file_types: null
+        enabled: true
+        files: []
+        foreground: theme:White
+        visible: true
+        text: Upload
+        font_size: null
+        font: ''
+        spacing_above: small
+        icon_align: left
+        spacing_below: small
+        italic: false
+        file: null
+        background: theme:Primary 500
+        bold: false
+        underline: false
+        multiple: false
+        icon: fa:upload
+      name: file_loader_1
+      layout_properties:
+        col_widths: {}
+        grid_position: ERTKJE,IYMMKJ
+        row_background: theme:Primary 500
+        full_width_row: false
+      event_bindings: {change: file_loader_1_change}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: file_terupload
+      layout_properties: {grid_position: 'ERTKJE,KIERQV', full_width_row: false}
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: '* Format: .csv ', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'NXVQTT,FMQKER'}
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"FQKKMF":45,"WDHOKY":15}',
+      spacing_below: small, background: ''}
+    name: card_6
+    layout_properties: {grid_position: 'JSMGJB,JOURFM KRGYQU,WFBSLY', full_width_row: true}
+    components:
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: 'theme:White', visible: true, text: View Time Series Plot, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: 'theme:Primary 500', bold: false, underline: false, icon: 'fa:area-chart'}
+      name: button_2
+      layout_properties: {grid_position: 'JVURMI,TTDADE', row_background: 'theme:Primary
+          500', full_width_row: true}
+      event_bindings: {click: button_2_click}
+    - type: Image
+      properties: {role: null, vertical_align: center, height: 224, tooltip: '', border: '',
+        foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
+        source: '', spacing_below: small, background: '', horizontal_align: center}
+      name: image_1
+      layout_properties: {grid_position: 'SICQUB,RIJTIL'}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_2
+      layout_properties: {grid_position: 'QKMBET,FQKKMF', row_background: '', full_width_row: false}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: 'theme:White', visible: false, text: '', font_size: null, font: '',
+        spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: 'theme:Primary 500', bold: false, underline: false, icon: 'fa:download'}
+      name: button_3
+      layout_properties: {grid_position: 'QKMBET,WDHOKY', row_background: '', full_width_row: false}
+      event_bindings: {click: button_3_click}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1
+    layout_properties: {grid_position: 'JSMGJB,JOURFM HGDFVX,YCCZPK', full_width_row: true}
+    components:
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: 'theme:White', visible: true, text: VIEW PACF, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: 'theme:Primary 500', bold: false, underline: false, icon: 'fa:bar-chart'}
+      name: button_4
+      layout_properties: {grid_position: 'YZNOEM,JGUEOG', row_background: 'theme:Primary
+          500', full_width_row: true}
+      event_bindings: {click: button_4_click}
+    - type: Image
+      properties: {height: 237}
+      name: image_2
+      layout_properties: {grid_position: 'NMYORY,GAHWKH'}
+      data_bindings: []
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{"EDXNVB":10,"PXAEAV":20,"IWBNMI":10,"WZOVOS":20}'}
+    name: card_4
+    layout_properties: {grid_position: 'JSMGJB,RHPKPT ZVZGOM,NRGALC', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: PARAMETER, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_4
+      layout_properties: {grid_position: 'DQLSVJ,QGNYSY', full_width_row: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: lag, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_5
+      layout_properties: {grid_position: 'DQLSVJ,EDXNVB', slot: default}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: 'theme:Black', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_1
+      layout_properties: {grid_position: 'DQLSVJ,PXAEAV'}
+      event_bindings: {pressed_enter: text_box_1_pressed_enter}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: neuron, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_7
+      layout_properties: {grid_position: 'DQLSVJ,IWBNMI', full_width_row: false}
+    - type: TextBox
+      properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+        border: '', enabled: true, foreground: 'theme:Black', visible: true, text: '',
+        font_size: null, font: '', spacing_above: small, type: number, spacing_below: small,
+        italic: false, background: '', bold: false, underline: false}
+      name: text_box_2
+      layout_properties: {grid_position: 'DQLSVJ,WZOVOS', full_width_row: false}
+      event_bindings: {pressed_enter: text_box_2_pressed_enter}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: 'theme:White', visible: true, text: PROCESS, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: 'theme:Primary 500', bold: false, underline: false, icon: 'fa:database'}
+      name: button_1
+      layout_properties:
+        col_widths: {}
+        grid_position: RLWAVR,KFLWJL
+        full_width_row: true
+        row_background: theme:Primary 500
+      event_bindings: {click: button_1_click}
+    - type: Plot
+      properties: {spacing_above: none, spacing_below: none, height: 478.33333587646484,
+        visible: true, tooltip: '', interactive: true}
+      name: plot_1
+      layout_properties: {grid_position: 'EMFTPO,UPMHFA', full_width_row: true}
+      event_bindings: {click: plot_1_click}
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"JGRQJZ":5,"FJRYEN":25,"AMZICT":5,"HUXZSK":25}',
+      spacing_below: small, background: ''}
+    name: card_2
+    layout_properties: {grid_position: 'JSMGJB,RHPKPT EGBNHD,FXMYMJ', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: METRICS, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_3
+      layout_properties: {grid_position: 'IXJYNY,GZYUSW', full_width_row: true}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: RMSE, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'DSIHWX,JGRQJZ'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: RMSE_lbl
+      layout_properties:
+        col_widths: {}
+        grid_position: DSIHWX,FJRYEN
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: MAPE, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_6
+      layout_properties: {grid_position: 'DSIHWX,AMZICT', full_width_row: false}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: 'theme:Black',
+        visible: true, text: '', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: MAPE_lbl
+      layout_properties: {grid_position: 'DSIHWX,HUXZSK', full_width_row: false}
+- type: ColumnPanel
+  properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+    spacing_below: small, background: ''}
+  name: card_3
+  layout_properties: {grid_position: 'OSDKXU,NFEAGR', full_width_row: true, row_background: 'theme:White'}
+  components:
+  - type: RichText
+    properties: {role: null, align: center, tooltip: '', enable_slots: true, border: '',
+      foreground: 'theme:Black', visible: true, font_size: 30, content: 'Predicting ',
+      font: '', spacing_above: small, spacing_below: none, data: null, background: '',
+      format: markdown}
+    name: rich_text_1_copy
+    layout_properties:
+      col_widths: {}
+      grid_position: SRFBDZ,TATYQV
+  - type: TextBox
+    properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: 30,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_3
+    layout_properties:
+      col_widths: {}
+      grid_position: SRFBDZ,DKGIQD
+    event_bindings: {pressed_enter: text_box_3_pressed_enter}
+  - type: RichText
+    properties: {role: null, align: left, tooltip: '', enable_slots: true, border: '',
+      foreground: 'theme:Black', visible: true, font_size: 30, content: Steps Ahead,
+      font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+      format: markdown}
+    name: rich_text_3
+    layout_properties:
+      col_widths: {}
+      grid_position: SRFBDZ,WYAWWS
+      slot: default
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: 'theme:White', visible: true, text: PREDICT, font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: 'theme:Primary 500', bold: false, underline: false, icon: 'fa:database'}
+    name: button_5
+    layout_properties: {grid_position: 'CACLCM,IGUUTH', full_width_row: false, row_background: 'theme:Primary
+        500'}
+    event_bindings: {click: button_5_click}
+  - type: Plot
+    properties: {}
+    name: plot_2
+    layout_properties: {grid_position: 'POZNMJ,RFQJMN'}
+  - type: RichText
+    properties: {role: null, align: right, tooltip: '', enable_slots: true, border: '',
+      foreground: 'theme:Black', visible: true, font_size: 25, content: Download File,
+      font: '', spacing_above: small, spacing_below: small, data: null, background: '',
+      format: markdown}
+    name: rich_text_2
+    layout_properties: {grid_position: 'MOBJAH,WMUEEY'}
+  - type: Button
+    properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+      foreground: '#000000', visible: false, text: '', font_size: 25, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: 'fa:download'}
+    name: button_6
+    layout_properties: {grid_position: 'MOBJAH,FPPJKT'}
+    event_bindings: {click: button_6_click}
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
+    role: null, html: ''}
+  event_bindings: {show: form_show}
